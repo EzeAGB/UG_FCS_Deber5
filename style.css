@@ -1,0 +1,111 @@
+.background {
+    background-color: #e8e8e8;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    
+    background-image: url('./resources/images/clay-banks-mYBMP8pW4uQ-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+}
+
+.info {
+    font-family: 'Autour One', sans-serif;
+    font-size: medium;
+    color: white;
+    margin-right: 2vw;
+    margin-top: 1vw;
+
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.left_panel {
+    --leftPanelWidth: 20vw;
+    --leftPanelHeight: 80vh;
+    --leftPanelMaxWidth: 250px;
+    width: var(--leftPanelWidth);
+    height: var(--leftPanelHeight);
+    max-width: var(--leftPanelMaxWidth);
+    position: relative;
+    top: 10vh;
+    background-color: rgba(112, 128, 144, 0.336);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: inset 0px 0px 10px rgba(170, 170, 170, 0.9);
+}
+.line {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    border-top: 5px solid rgba(146, 146, 146, 0.514);
+    width: 100%;
+}
+.info_container {
+    width: 100%;
+    height:  50%;
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+    position: relative;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.name {
+    font-family: 'Autour One', sans-serif;
+    font-size: large;
+    color: white;
+
+    text-align: center;
+    margin-top: 25%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.photo {
+    width: 15vw;
+    height: 15vw;
+
+    position: relative;
+    left: calc(var(--leftPanelWidth) / 8);
+    top: calc(var(--leftPanelWidth) / 8);
+
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    
+    filter: drop-shadow(0px 0px 10px #00000099); 
+}
+
+.right_panel {
+    height: 80vh;
+    flex-grow: 1;
+    margin-right: 0px;
+    position: relative;
+    top: 10vh;
+    background-color: rgba(112, 128, 144, 0.336);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+
+    box-shadow: inset 0px 0px 10px rgba(170, 170, 170, 0.9);
+}
+.right_panel_margin {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.root {
+    display: flex;
+    flex-direction: row;
+}
+
+.body {
+    overflow: hidden;
+}
